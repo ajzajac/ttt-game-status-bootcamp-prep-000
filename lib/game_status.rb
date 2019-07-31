@@ -27,13 +27,18 @@ def won?(board)
     winner
   end
   
+<<<<<<< HEAD
 def full?(board)
+=======
+  def full?(board)
+>>>>>>> ca80b6f604b0918551661e7154786f670d17c8a9
     board.all? do |slot|
       slot == "X" || slot == "O"
     end
   end
 
 def draw?(board)
+<<<<<<< HEAD
     draw = false
     full = full?(board)
     won = won?(board)
@@ -61,3 +66,13 @@ def over?(board)
       "O"
     end
   end
+=======
+ draw = false
+ full = full?(board)
+ won == won?(board)
+ if full == true && won == false
+   draw = true
+end
+end
+ 
+>>>>>>> ca80b6f604b0918551661e7154786f670d17c8a9
